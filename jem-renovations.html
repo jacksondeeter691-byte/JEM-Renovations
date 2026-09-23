@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEM Renovations LLC | Expert Remodeling & Renovation Services – Fishers, IN</title>
+<meta name="description" content="JEM Renovations LLC – trusted local remodeling and renovation services in Fishers, Indiana. Bathrooms, kitchens, painting, siding & more. Call for a free estimate today.">
+<meta name="keywords" content="remodeling Fishers IN, renovation services Fishers Indiana, bathroom remodel Fishers IN, home renovation Indianapolis">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a2744;
+    --navy-light: #243460;
+    --gold: #c9933a;
+    --gold-light: #e8b05a;
+    --slate: #4a5568;
+    --light: #f7f8fc;
+    --white: #ffffff;
+    --border: #e2e6ef;
+    --text: #2d3748;
+    --shadow: 0 4px 24px rgba(26,39,68,0.10);
+    --shadow-lg: 0 12px 48px rgba(26,39,68,0.16);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+  }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--navy);
+    color: #aab8d4;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+  }
+  .topbar a { color: var(--gold-light); text-decoration: none; font-weight: 600; }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%;
+    height: 68px;
+    box-shadow: 0 2px 12px rgba(26,39,68,0.07);
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+  .logo span { color: var(--gold); }
+  nav ul { list-style: none; display: flex; gap: 32px; }
+  nav ul a {
+    text-decoration: none; color: var(--slate);
+    font-size: 0.9rem; font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--navy); }
+  .nav-cta {
+    background: var(--gold); color: var(--white) !important;
+    padding: 10px 22px; border-radius: 6px;
+    font-weight: 600 !important; font-size: 0.88rem !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 55%, var(--navy-light) 100%);
+    color: var(--white);
+    padding: 90px 5% 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner { max-width: 680px; position: relative; z-index: 1; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,147,58,0.18);
+    border: 1px solid rgba(201,147,58,0.4);
+    color: var(--gold-light);
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+    padding: 6px 14px; border-radius: 100px;
+    margin-bottom: 22px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  .hero h1 em { color: var(--gold-light); font-style: normal; }
+  .hero p {
+    font-size: 1.08rem; color: #c8d4e8; max-width: 520px;
+    margin-bottom: 36px; font-weight: 300;
+  }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--white);
+    padding: 15px 30px; border-radius: 7px;
+    font-weight: 700; font-size: 0.96rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 4px 18px rgba(201,147,58,0.35);
+  }
+  .btn-primary:hover { background: var(--gold-light); color: var(--navy); transform: translateY(-1px); }
+  .btn-secondary {
+    background: transparent; color: var(--white);
+    padding: 15px 30px; border-radius: 7px;
+    border: 2px solid rgba(255,255,255,0.35);
+    font-weight: 600; font-size: 0.96rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.07); }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--light);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 5%;
+    display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 32px;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.88rem; font-weight: 600; color: var(--navy);
+  }
+  .trust-icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--navy); color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+  }
+  .stars { color: #f6c823; font-size: 1rem; letter-spacing: 1px; }
+
+  /* ── SECTIONS ── */
+  section { padding: 80px 5%; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 900; color: var(--navy);
+    line-height: 1.2; margin-bottom: 16px;
+  }
+  .subtext { font-size: 1.02rem; color: var(--slate); max-width: 540px; margin-bottom: 48px; }
+
+  /* ── SERVICES ── */
+  .services-section { background: var(--white); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .service-card {
+    border: 1px solid var(--border);
+    border-radius: 12px; padding: 32px 28px;
+    background: var(--white);
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: var(--border); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon { font-size: 2rem; margin-bottom: 14px; }
+  .service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.18rem; font-weight: 700; color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .service-card p { font-size: 0.9rem; color: var(--slate); margin-bottom: 14px; }
+  .service-card ul {
+    list-style: none; font-size: 0.85rem; color: var(--slate); margin-bottom: 20px;
+  }
+  .service-card ul li::before { content: '✓ '; color: var(--gold); font-weight: 700; }
+  .service-card ul li { padding: 3px 0; }
+  .service-link {
+    font-size: 0.85rem; font-weight: 700; color: var(--navy);
+    text-decoration: none; display: inline-flex; align-items: center; gap: 5px;
+  }
+  .service-link:hover { color: var(--gold); }
+
+  /* ── WHY US ── */
+  .why-section { background: var(--light); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+  }
+  .why-card {
+    background: var(--white); border-radius: 10px; padding: 28px 24px;
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+  .why-card .icon { font-size: 2.2rem; margin-bottom: 14px; }
+  .why-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .why-card p { font-size: 0.88rem; color: var(--slate); }
+
+  /* ── REVIEWS ── */
+  .reviews-section { background: var(--navy); color: var(--white); }
+  .reviews-section h2 { color: var(--white); }
+  .reviews-section .section-label { color: var(--gold-light); }
+  .reviews-section .subtext { color: #a0b0cc; }
+  .reviews-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .review-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 12px; padding: 28px 26px;
+  }
+  .review-stars { color: #f6c823; font-size: 1rem; margin-bottom: 12px; }
+  .review-text { font-size: 0.93rem; color: #c8d4e8; margin-bottom: 18px; line-height: 1.7; font-style: italic; }
+  .reviewer { font-weight: 700; color: var(--white); font-size: 0.88rem; }
+  .review-date { font-size: 0.78rem; color: #8a9fc4; margin-top: 2px; }
+
+  /* ── CTA BANNER ── */
+  .cta-section {
+    background: var(--gold);
+    padding: 60px 5%;
+    text-align: center;
+  }
+  .cta-section h2 { color: var(--navy); font-size: clamp(1.6rem, 3vw, 2.4rem); }
+  .cta-section p { color: var(--navy); opacity: 0.8; margin: 14px auto 32px; max-width: 480px; font-size: 1rem; }
+  .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-dark {
+    background: var(--navy); color: var(--white);
+    padding: 15px 32px; border-radius: 7px;
+    font-weight: 700; font-size: 0.96rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: background 0.2s;
+  }
+  .btn-dark:hover { background: var(--navy-light); }
+  .btn-outline-dark {
+    background: transparent; color: var(--navy);
+    padding: 15px 32px; border-radius: 7px;
+    border: 2px solid var(--navy);
+    font-weight: 700; font-size: 0.96rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    transition: background 0.2s;
+  }
+  .btn-outline-dark:hover { background: var(--navy); color: var(--white); }
+
+  /* ── ABOUT ── */
+  .about-section { background: var(--white); }
+  .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .about-visual {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-radius: 14px; padding: 48px 40px;
+    color: var(--white); text-align: center;
+  }
+  .about-visual .big-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem; font-weight: 900; color: var(--gold-light);
+    line-height: 1;
+  }
+  .about-visual p { color: #a0b0cc; font-size: 0.9rem; margin-top: 4px; }
+  .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+  .about-stat { background: rgba(255,255,255,0.07); border-radius: 8px; padding: 18px; }
+  .about-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-weight: 900; color: var(--gold-light);
+  }
+  .about-stat .lbl { font-size: 0.78rem; color: #8a9fc4; }
+  .about-text p { color: var(--slate); font-size: 0.97rem; margin-bottom: 16px; }
+  .about-text ul { list-style: none; margin: 20px 0; }
+  .about-text ul li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.93rem; color: var(--text); }
+  .about-text ul li::before { content: '✦'; color: var(--gold); font-size: 0.7rem; margin-top: 4px; flex-shrink: 0; }
+
+  /* ── FAQ ── */
+  .faq-section { background: var(--light); }
+  .faq-list { max-width: 680px; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+  .faq-q {
+    font-weight: 700; font-size: 0.97rem; color: var(--navy);
+    cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+    user-select: none;
+  }
+  .faq-q .toggle { font-size: 1.2rem; color: var(--gold); transition: transform 0.3s; }
+  .faq-a { display: none; font-size: 0.92rem; color: var(--slate); padding-top: 12px; line-height: 1.7; }
+  .faq-item.open .faq-a { display: block; }
+  .faq-item.open .toggle { transform: rotate(45deg); }
+
+  /* ── CONTACT ── */
+  .contact-section { background: var(--white); }
+  .contact-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start; }
+  .contact-info h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--navy); margin-bottom: 20px; }
+  .contact-detail {
+    display: flex; align-items: flex-start; gap: 14px;
+    margin-bottom: 20px;
+  }
+  .contact-detail .ci { font-size: 1.3rem; color: var(--gold); }
+  .contact-detail h4 { font-size: 0.85rem; color: var(--slate); font-weight: 600; margin-bottom: 2px; }
+  .contact-detail a, .contact-detail p { font-size: 1rem; color: var(--navy); font-weight: 600; text-decoration: none; }
+  .contact-detail a:hover { color: var(--gold); }
+  .service-areas { margin-top: 28px; }
+  .service-areas h4 { font-size: 0.85rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .area-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .area-tag {
+    background: var(--light); border: 1px solid var(--border);
+    color: var(--slate); font-size: 0.8rem; font-weight: 600;
+    padding: 5px 12px; border-radius: 100px;
+  }
+  .contact-form-wrap {
+    background: var(--light); border-radius: 12px;
+    padding: 36px 32px; border: 1px solid var(--border);
+  }
+  .contact-form-wrap h3 { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 1.35rem; margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { font-size: 0.82rem; font-weight: 700; color: var(--navy); display: block; margin-bottom: 6px; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 11px 14px;
+    border: 1.5px solid var(--border); border-radius: 7px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.92rem;
+    background: var(--white); color: var(--text);
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none; border-color: var(--navy);
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .btn-form {
+    width: 100%; background: var(--navy); color: var(--white);
+    padding: 14px; border-radius: 7px; font-weight: 700; font-size: 0.96rem;
+    border: none; cursor: pointer; transition: background 0.2s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-form:hover { background: var(--gold); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy); color: #8a9fc4;
+    padding: 48px 5% 28px;
+  }
+  .footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 32px; }
+  .footer-brand .logo { color: var(--white); display: block; margin-bottom: 12px; font-size: 1.3rem; }
+  .footer-brand p { font-size: 0.86rem; line-height: 1.7; }
+  .footer-col h4 { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--white); margin-bottom: 14px; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 8px; }
+  .footer-col ul a { color: #8a9fc4; text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.8rem; flex-wrap: wrap; gap: 10px;
+  }
+  .footer-bottom a { color: var(--gold-light); text-decoration: none; }
+
+  /* ── MOBILE STICKY CTA ── */
+  .mobile-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: var(--gold);
+    padding: 14px 20px;
+    text-align: center;
+  }
+  .mobile-cta a {
+    color: var(--navy); font-weight: 800; font-size: 1.05rem;
+    text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+
+  /* ── HAMBURGER / MOBILE NAV ── */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+
+  @media (max-width: 900px) {
+    nav ul, nav .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .mobile-cta { display: block; }
+    .about-inner, .contact-inner { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    section { padding: 60px 5%; }
+    body { padding-bottom: 60px; }
+  }
+
+  /* ── PORTFOLIO ── */
+  .portfolio-section { background: var(--white); }
+  .portfolio-tabs {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-bottom: 40px;
+  }
+  .ptab {
+    padding: 9px 20px; border-radius: 100px;
+    border: 1.5px solid var(--border);
+    font-size: 0.85rem; font-weight: 600; color: var(--slate);
+    cursor: pointer; background: var(--white);
+    transition: all 0.2s;
+  }
+  .ptab:hover, .ptab.active {
+    background: var(--navy); color: var(--white); border-color: var(--navy);
+  }
+  .portfolio-group { display: none; }
+  .portfolio-group.active { display: block; }
+  .portfolio-group h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; color: var(--navy);
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px; margin-bottom: 48px;
+  }
+  .portfolio-card {
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--light);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+  }
+  .portfolio-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+  .portfolio-img {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover;
+    display: block; background: var(--border);
+  }
+  .portfolio-caption { padding: 12px 14px; }
+  .portfolio-caption h4 { font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+  .portfolio-caption p { font-size: 0.78rem; color: var(--slate); margin-top: 2px; }
+
+  /* ── LIGHTBOX ── */
+  #lightbox {
+    display: none; position: fixed; inset: 0; z-index: 500;
+    background: rgba(0,0,0,0.88);
+    align-items: center; justify-content: center; flex-direction: column;
+    padding: 20px;
+  }
+  #lightbox.open { display: flex; }
+
+  /* ── ANIM ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner > * { animation: fadeUp 0.6s ease both; }
+  .hero-inner .hero-badge { animation-delay: 0.05s; }
+  .hero-inner h1 { animation-delay: 0.15s; }
+  .hero-inner p { animation-delay: 0.25s; }
+  .hero-inner .hero-btns { animation-delay: 0.35s; }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  📍 Serving Fishers, Carmel, Noblesville & surrounding Indianapolis communities &nbsp;|&nbsp;
+  <a href="tel:+13174300149">📞 Call for a Free Estimate Today</a>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">JEM <span>Renovations</span></div>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Free Estimate</a></li>
+  </ul>
+  <div class="hamburger" onclick="this.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">⭐ 5.0 Rating &nbsp;·&nbsp; 26 Reviews &nbsp;·&nbsp; Fishers, IN</div>
+    <h1>Expert Renovations &<br><em>Remodeling Services</em><br>in Fishers, IN</h1>
+    <p>We listen to your vision, bring it to life with exceptional craftsmanship, and leave your home better than we found it — every single time.</p>
+    <div class="hero-btns">
+      <a href="tel:+13174300149" class="btn-primary">📞 Call Now</a>
+      <a href="#contact" class="btn-secondary">Get a Free Estimate →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <div class="trust-icon">⭐</div>
+    <div>
+      <div class="stars">★★★★★</div>
+      <div>5.0 Rating · 26 Reviews</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">✓</div>
+    <div>Licensed & Insured</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">🏠</div>
+    <div>Local Fishers Business</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">🔨</div>
+    <div>Full-Service Remodeling</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="section-label">What We Do</div>
+  <h2>Services We Offer</h2>
+  <p class="subtext">From dream bathroom remodels to exterior transformations, JEM Renovations delivers quality craftsmanship that Fishers homeowners trust.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🚿</div>
+      <h3>Bathroom Remodels</h3>
+      <p>Transform your bathroom into the space you've always envisioned.</p>
+      <ul>
+        <li>Full primary & guest bath renovations</li>
+        <li>Custom tile showers & surrounds</li>
+        <li>Freestanding tub installation</li>
+        <li>Vanity, mirror & fixture upgrades</li>
+        <li>Wainscoting & accent walls</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🍳</div>
+      <h3>Kitchen Renovations</h3>
+      <p>Bring new life to your kitchen with quality updates that last.</p>
+      <ul>
+        <li>Cabinet painting & refinishing</li>
+        <li>Countertop installation</li>
+        <li>Tile backsplash</li>
+        <li>Fixture & hardware upgrades</li>
+        <li>Full kitchen remodels</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3>Interior & Exterior Painting</h3>
+      <p>Professional painting that refreshes any surface inside or out.</p>
+      <ul>
+        <li>Interior walls, trim & ceilings</li>
+        <li>Cabinet & furniture painting</li>
+        <li>Exterior house painting</li>
+        <li>Deck staining & refinishing</li>
+        <li>Door & shutter painting</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏚️</div>
+      <h3>Siding & Exterior Repair</h3>
+      <p>Protect and restore your home's exterior with lasting repairs.</p>
+      <ul>
+        <li>Hardiplank & siding replacement</li>
+        <li>Rotted wood repair & replacement</li>
+        <li>Door frame & trim repair</li>
+        <li>Power washing & prep</li>
+        <li>Window & door replacement</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Drywall & Ceiling Repair</h3>
+      <p>Seamless repairs that match your existing walls perfectly.</p>
+      <ul>
+        <li>Drywall patching & replacement</li>
+        <li>Water damage repair</li>
+        <li>Texture matching</li>
+        <li>Ceiling repair & restoration</li>
+        <li>Smooth finish prep for painting</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📐</div>
+      <h3>Custom Millwork & Built-ins</h3>
+      <p>One-of-a-kind built-in features that add beauty and function.</p>
+      <ul>
+        <li>Custom window seats & benches</li>
+        <li>Built-in shelving & cabinetry</li>
+        <li>Mudroom & laundry updates</li>
+        <li>Wainscoting & accent walls</li>
+        <li>Any custom project — just ask!</li>
+      </ul>
+      <a href="#contact" class="service-link">Request service →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+  <div class="section-label">Why JEM</div>
+  <h2>The JEM Difference</h2>
+  <p class="subtext">We know you have choices. Here's why Fishers homeowners choose JEM Renovations — and keep coming back.</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="icon">👂</div>
+      <h3>We Listen to Your Vision</h3>
+      <p>Jamie takes time to truly understand what you want — and delivers results that exceed expectations.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">✅</div>
+      <h3>We Show Up & Follow Through</h3>
+      <p>On schedule, on budget. When Jamie commits to a timeline, he keeps it.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">💬</div>
+      <h3>Prompt, Clear Communication</h3>
+      <p>You'll always know what's happening. Katie keeps projects on track and questions answered fast.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">🔨</div>
+      <h3>Exceptional Craftsmanship</h3>
+      <p>Every detail matters. JEM treats your home like their own — with care on every single job.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">🧹</div>
+      <h3>Clean, Tidy Work Site</h3>
+      <p>We clean up after ourselves every day. You'll barely know we were there — except for the results.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">⭐</div>
+      <h3>Your Satisfaction Guaranteed</h3>
+      <p>If something isn't right, Jamie makes it right. Period. Your happiness is the only finish line.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="section-label">What Customers Say</div>
+  <h2>Trusted by Fishers Homeowners</h2>
+  <p class="subtext">26 five-star reviews and counting. Here's what our customers have to say.</p>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"We are absolutely thrilled with our primary bathroom remodel! A huge thank you to JEM Renovations LLC for your professionalism, dedication, and hard work. Your attention to detail and ability to truly listen and bring our vision to life is incredibly impressive. We highly recommend you to anyone who will listen — and we're already looking forward to working with you on future projects!"</p>
+      <div class="reviewer">Christine Selky</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jaime and his team did an outstanding job with the renovations at our home. Not only was the quality of work exceptional but the team was professional. We would highly recommend JEM Renovations for your home renovation projects."</p>
+      <div class="reviewer">Melissa Seyler</div>
+      <div class="review-date">5 months ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jaimie and his team at JEM renovations did a great job replacing rotten wood around our front door frame and painting it to look new. JEM also prepared, patched and painted our deck. JEM also painted our window shutters to match new front door. Highly recommend Jaimie, JEM and team."</p>
+      <div class="reviewer">John Doe</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie Miles and JEM Renovations created for me the 'shower of my dreams!' It is absolutely stunning and I could not be happier with the results! Jamie is such a hard worker and has great integrity in his business dealings. He does exactly what he says he will do and does it in a timely manner. We also love his assistant, Katie — she is a joy to work with and helps keep all of his projects on track!"</p>
+      <div class="reviewer">Deborah Howard</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie did an amazing job painting my house. He made sure rotted wood was replaced or repaired, power washed & scraped all the trim & siding, and fixed a previously-undiscovered leak that had been causing damage for 14 yrs. Jamie's attention to detail & dedication to making sure the job was done right gives me confidence in recommending him for any interior or exterior needs you might have."</p>
+      <div class="reviewer">Katie Alford</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The whole team at JEM was fantastic to work with. We worked together to diagnose and repair the trim around my chimney. Even though it felt like a 'small project,' it's really nice to work with people who treat it with the same respect as their biggest projects. Communication was always prompt, and they kept to the exact schedule that we'd agreed upon."</p>
+      <div class="reviewer">RJ Wachs</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"It took weeks for me to find a company/contractor this summer who was responsive & reliable. We wound up using Jamie at JEM renovations. He helped us complete two drywall projects around the house, repaired outdoor water damage and siding issues. All in a day & half. He was fair priced & professional. Would recommend him and his team."</p>
+      <div class="reviewer">Amanda Rodenbeck</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I hired JEM for my deck repair and they did a fantastic job. The craftsmanship is excellent. Jamie and Katie communicated throughout the project and the team cleaned up after themselves. I couldn't be more pleased with the service. I will definitely refer and hire them again."</p>
+      <div class="reviewer">Kira Newkirk</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Reliable and moderately priced bathroom remodel. The workers are highly skilled and the experience was entirely positive. I will use them again."</p>
+      <div class="reviewer">Joe Dietz</div>
+      <div class="review-date">5 months ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"JEM Renovations has provided excellent workmanship in the Kitchen and Bathroom projects in our home. Jamie has always been very pleasant and thoughtful in dealing with us. He is dependable, thorough, detailed and at the end of a project, everything is left very tidy and clean. We highly recommend him to anyone who needs household projects, both big and small."</p>
+      <div class="reviewer">Don & Martha Stutzman</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie and crew remodeled our dated bath and bedroom. Wonderful job and attention to detail. They were able to make any requested additions or changes asked. Work they did was absolutely great. Shout out to Katie, Samuel and Marvin also! Will be using them again for our house and a rental we have."</p>
+      <div class="reviewer">Mark & Leslie Lecklider</div>
+      <div class="review-date">8 months ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Excellent attention to details! Jamie and his team did a great job painting our vintage cabinets to make them fresh and modern. They showed up when they said they would, and worked until the job was completed. He came to inspect the work when finished to ensure we were satisfied. He also took the time to provide us itemized quotes for other renovation projects. Definitely would recommend JEM Renovations!"</p>
+      <div class="reviewer">Barbara Zech</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie's management skills were put to the test on the several projects JEM helped out with at our home. Projects included drywall repair, rotted wood trim replacement, and installing a deck door kickplate. Everything was completed on-time and without a hitch."</p>
+      <div class="reviewer">Bob Ripperger</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I told my neighbor I needed a handyman to do misc projects. He referred me to JEM Renovations. Their crew quickly completed all of my projects to perfection demonstrating their skills. I was very pleased with their work, will use them again & will gladly refer them to others."</p>
+      <div class="reviewer">Jane Knecht</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"JEM contractors installed windows to our screened in porch. The process was easy and the installation was done quickly. They made sure to provide a meeting with the window representative so we knew exactly what we were getting. They never left a mess and were not at all intrusive. We liked them enough to have them renovate our master bathroom."</p>
+      <div class="reviewer">Nancy Bates</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"This company has trustworthy, friendly, and meticulous staff. I had new tile floor put into 4 rooms, tile in bathroom, a new toilet put in, and painting inside and outside the house. Highly recommend!!"</p>
+      <div class="reviewer">Elyce Elder</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie built this wonderful sitting area for me. Loved his work and how beautiful it turned out."</p>
+      <div class="reviewer">Samruddhi Dawande</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie does great work and is a perfectionist. If he sees something that doesn't meet his standards he comes back to fix it. He is very personable and easy to work with."</p>
+      <div class="reviewer">Sally Might</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"They did an amazing job, high quality work. My husband and I are so happy with our kitchen!"</p>
+      <div class="reviewer">Addy Riley</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"They did an amazing job on my home! Would definitely recommend!"</p>
+      <div class="reviewer">Rick Niemritz</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Fantastic work on staining my garage doors. Great communication, fair price and professional."</p>
+      <div class="reviewer">Jerry Faletic</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie does excellent work at a great price! It's hard to find this kind of expertise these days."</p>
+      <div class="reviewer">Keith Trump</div>
+      <div class="review-date">2 years ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Jamie and his crew are very hard workers, and he is always responsive and wants to make sure everything is done right."</p>
+      <div class="reviewer">Henry Karlson</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The only company I'll go with for paint, renovations, remodels. Super easy to work with."</p>
+      <div class="reviewer">Dane Schilling</div>
+      <div class="review-date">1 year ago · Google Review</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I used JEM Renovations for a Primary Bath remodel. I am so pleased with the final result. There was an unexpected hiccup along the way (no fault of JEM) and Jamie and Katie had thorough communication and solutions. The staff was professional and courteous. I would definitely use JEM again."</p>
+      <div class="reviewer">Roederer5</div>
+      <div class="review-date">1 week ago · Google Review</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-section">
+  <h2>Ready to Start Your Project?</h2>
+  <p>Get a free, no-obligation estimate from Fishers' most trusted renovation team.</p>
+  <div class="cta-btns">
+    <a href="tel:+13174300149" class="btn-dark">📞 Call Now</a>
+    <a href="#contact" class="btn-outline-dark">Request a Free Quote</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-visual">
+      <div class="big-num">5.0</div>
+      <p>Perfect Rating Across 26 Google Reviews</p>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="num">26 ⭐</div>
+          <div class="lbl">5-Star Reviews</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">100%</div>
+          <div class="lbl">Satisfaction Goal</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">Lic'd</div>
+          <div class="lbl">Licensed & Insured</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">Local</div>
+          <div class="lbl">Fishers, Indiana</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label">Our Story</div>
+      <h2>Built on Craftsmanship & Trust</h2>
+      <p>JEM Renovations LLC was founded right here in Fishers, Indiana with one simple mission: to be the renovation partner that homeowners can truly count on.</p>
+      <p>Owner Jamie Miles built this company on the belief that every homeowner deserves someone who listens, communicates clearly, shows up when they say they will, and takes genuine pride in the finished result. His assistant Katie keeps every project running smoothly — on time and on budget.</p>
+      <p>Whether it's your dream bathroom, a kitchen refresh, exterior restoration, or a one-of-a-kind custom build, JEM brings the same dedication and attention to detail to every job.</p>
+      <ul>
+        <li>We listen first — your vision drives every decision</li>
+        <li>We communicate throughout the entire project</li>
+        <li>We price honestly — no surprises, no hidden fees</li>
+        <li>We leave your home clean and tidy every single day</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="margin-top:10px; display:inline-flex;">Get Your Free Estimate →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <p class="subtext">Everything you might want to know before reaching out.</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        How do I get a quote? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">Just give us a call or fill out the contact form below. We'll schedule a time to assess your project and provide a free, no-obligation estimate — usually within 1–2 business days.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What areas do you serve? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">We primarily serve Fishers, IN and surrounding communities including Carmel, Noblesville, Westfield, Zionsville, and Indianapolis. Not sure if we cover your area? Just ask!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Are you licensed and insured? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">Yes — JEM Renovations is fully licensed and insured. We take your safety and trust seriously and are happy to provide documentation upon request.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What size projects do you take on? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">We handle everything from smaller repairs and paint jobs to full bathroom and kitchen remodels, siding replacements, and custom built-in projects. If you're not sure whether your project is a fit, reach out and we'll let you know.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        How quickly can you get started? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">It depends on current availability, but we do our best to accommodate your timeline. After your estimate is approved, we'll get you scheduled as quickly as possible and keep you updated throughout.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Do you stand behind your work? <span class="toggle">+</span>
+      </div>
+      <div class="faq-a">Absolutely. Your satisfaction is our top priority. If something isn't right, Jamie comes back to fix it — no questions asked. We don't consider a job done until you love the result.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-label">Get In Touch</div>
+  <h2>Request Your Free Estimate</h2>
+  <p class="subtext">Ready to get started? Reach out below and Jamie or Katie will be in touch shortly.</p>
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h3>Contact JEM Renovations</h3>
+      <div class="contact-detail">
+        <div class="ci">📞</div>
+        <div>
+          <h4>Phone (click to call)</h4>
+          <a href="tel:+13174300149">(317) 430-0149</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="ci">🌐</div>
+        <div>
+          <h4>Website</h4>
+          <a href="https://jemreno.com" target="_blank" rel="noopener">jemreno.com</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="ci">📍</div>
+        <div>
+          <h4>Based In</h4>
+          <p>Fishers, Indiana</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="ci">🕐</div>
+        <div>
+          <h4>Hours</h4>
+          <p>Mon–Sat 8am–5pm · Sun Closed</p>
+        </div>
+      </div>
+      <div class="service-areas">
+        <h4>Service Areas</h4>
+        <div class="area-tags">
+          <span class="area-tag">Fishers</span>
+          <span class="area-tag">Carmel</span>
+          <span class="area-tag">Noblesville</span>
+          <span class="area-tag">Westfield</span>
+          <span class="area-tag">Zionsville</span>
+          <span class="area-tag">Indianapolis</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <h3>Tell Us About Your Project</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label>Last Name *</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" placeholder="(317) 555-0100">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Bathroom Remodel</option>
+          <option>Kitchen Renovation</option>
+          <option>Interior Painting</option>
+          <option>Exterior Painting</option>
+          <option>Siding & Exterior Repair</option>
+          <option>Drywall & Ceiling Repair</option>
+          <option>Custom Built-ins & Millwork</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Project Description</label>
+        <textarea placeholder="Tell us a bit about what you need done and your location in Fishers or surrounding areas..."></textarea>
+      </div>
+      <button class="btn-form">📩 Send My Free Estimate Request</button>
+      <p style="font-size:0.78rem;color:var(--slate);text-align:center;margin-top:12px;">We typically respond within a few hours. No obligation, no spam.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio-section" id="portfolio">
+  <div class="section-label">Our Work</div>
+  <h2>Project Portfolio</h2>
+  <p class="subtext">Real projects. Real results. Here's a look at what JEM Renovations has built for homeowners across the Fishers area.</p>
+
+  <div class="portfolio-tabs">
+    <button class="ptab active" onclick="filterPortfolio('all', this)">All Projects</button>
+    <button class="ptab" onclick="filterPortfolio('bathroom', this)">Bathrooms</button>
+    <button class="ptab" onclick="filterPortfolio('exterior', this)">Exterior & Siding</button>
+    <button class="ptab" onclick="filterPortfolio('interior', this)">Interior & Paint</button>
+    <button class="ptab" onclick="filterPortfolio('custom', this)">Custom Work</button>
+  </div>
+
+  <!-- ALL -->
+  <div class="portfolio-group active" id="group-all">
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_01.webp','Primary Bathroom Remodel','Custom walk-in shower with white subway tile & window')"><img src="img/bathroom_01.webp" class="portfolio-img" alt="Bathroom shower with window" loading="lazy"><div class="portfolio-caption"><h4>Primary Bathroom Remodel</h4><p>White subway tile shower with built-in niche</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_02.webp','Bathroom – Freestanding Tub','Freestanding soaker tub with walk-in shower')"><img src="img/bathroom_02.webp" class="portfolio-img" alt="Freestanding tub bathroom" loading="lazy"><div class="portfolio-caption"><h4>Freestanding Tub & Shower</h4><p>Complete primary bath renovation</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_05.webp','Double Vanity & Arched Mirrors','New vanity with gold sconces and arched mirrors')"><img src="img/bathroom_05.webp" class="portfolio-img" alt="Double vanity with arched mirrors" loading="lazy"><div class="portfolio-caption"><h4>Double Vanity Upgrade</h4><p>Arched mirrors, gold sconces & quartz countertop</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bath_luxury_vanity.webp','Luxury Bathroom – Vanity','Dark wood double vanity with sconce lighting')"><img src="img/bath_luxury_vanity.webp" class="portfolio-img" alt="Luxury bathroom vanity" loading="lazy"><div class="portfolio-caption"><h4>Luxury Bath – Vanity</h4><p>Dark wood cabinetry with white quartz & sconces</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bath_luxury_tub.webp','Luxury Bathroom – Marble Tub Surround','Marble-look tile surround with black grid windows')"><img src="img/bath_luxury_tub.webp" class="portfolio-img" alt="Marble tub surround" loading="lazy"><div class="portfolio-caption"><h4>Luxury Bath – Marble Tub Surround</h4><p>Stunning marble-look tile with steel-frame windows</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/shower_pebble.webp','Walk-In Shower – Pebble Accent Tile','Glass enclosed shower with black pebble band')"><img src="img/shower_pebble.webp" class="portfolio-img" alt="Shower with pebble tile accent" loading="lazy"><div class="portfolio-caption"><h4>Walk-In Shower – Pebble Accent</h4><p>Black pebble mosaic band, rain head & glass door</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/custom_window_seat.webp','Custom Window Seat Built-In','Floor-to-ceiling built-in shelving with window seat')"><img src="img/custom_window_seat.webp" class="portfolio-img" alt="Custom window seat with built-in shelves" loading="lazy"><div class="portfolio-caption"><h4>Custom Window Seat & Built-ins</h4><p>Full floor-to-ceiling shelving with storage seat</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/exterior_door.webp','Front Door Restoration','Refinished red door with new surround & hardware')"><img src="img/exterior_door.webp" class="portfolio-img" alt="Red front door restoration" loading="lazy"><div class="portfolio-caption"><h4>Front Door Restoration</h4><p>Refinished door with new surround & smart lock</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_before.webp','Victorian Home Siding Restoration','Before: peeling paint & aged siding on Victorian home')"><img src="img/siding_before.webp" class="portfolio-img" alt="Victorian home before siding restoration" loading="lazy"><div class="portfolio-caption"><h4>Victorian Home – Before</h4><p>Full exterior restoration starting from the studs</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_chimney.webp','New Siding – Chimney Detail','Fresh siding installed around chimney surround')"><img src="img/siding_chimney.webp" class="portfolio-img" alt="New siding chimney detail" loading="lazy"><div class="portfolio-caption"><h4>Siding – Chimney Detail</h4><p>Clean new siding install around chimney</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/ceiling_after.webp','Ceiling Repair – Finished','Water-damaged ceiling repaired and textured to match')"><img src="img/ceiling_after.webp" class="portfolio-img" alt="Ceiling repair finished result" loading="lazy"><div class="portfolio-caption"><h4>Ceiling Repair – Finished</h4><p>Water damage repaired, textured & painted to match</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/counter_detail.webp','Bathroom Counter Detail','White quartz countertop with gold hardware & faucet')"><img src="img/counter_detail.webp" class="portfolio-img" alt="Quartz counter with gold hardware" loading="lazy"><div class="portfolio-caption"><h4>Counter & Hardware Detail</h4><p>White quartz with brushed gold faucet & pulls</p></div></div>
+    </div>
+  </div>
+
+  <!-- BATHROOMS -->
+  <div class="portfolio-group" id="group-bathroom">
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_01.webp','Shower – White Subway Tile','Walk-in shower with subway tile, niche & window')"><img src="img/bathroom_01.webp" class="portfolio-img" alt="Subway tile shower" loading="lazy"><div class="portfolio-caption"><h4>Shower – White Subway Tile</h4><p>Walk-in shower with built-in niche & window</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_02.webp','Freestanding Tub & Shower','Soaker tub, walk-in shower & grey vanity')"><img src="img/bathroom_02.webp" class="portfolio-img" alt="Freestanding tub with shower" loading="lazy"><div class="portfolio-caption"><h4>Freestanding Tub & Shower</h4><p>Full primary bath renovation</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_03.webp','Shower Head & Niche Detail','Multi-function shower head with recessed niche')"><img src="img/bathroom_03.webp" class="portfolio-img" alt="Shower head and niche" loading="lazy"><div class="portfolio-caption"><h4>Shower – Fixture Detail</h4><p>Multi-function head with recessed tile niche</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_04.webp','Bathroom – Chandelier & Tile','Crystal chandelier over tiled bath surround')"><img src="img/bathroom_04.webp" class="portfolio-img" alt="Bathroom chandelier" loading="lazy"><div class="portfolio-caption"><h4>Bathroom – Chandelier Detail</h4><p>Crystal chandelier with white tile & window</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_05.webp','Double Vanity – Arched Mirrors','Gold sconces, arched mirrors & quartz countertop')"><img src="img/bathroom_05.webp" class="portfolio-img" alt="Double vanity arched mirrors" loading="lazy"><div class="portfolio-caption"><h4>Double Vanity – Arched Mirrors</h4><p>Gold sconces & quartz with grey cabinet base</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_06.webp','Double Vanity – Side View','Second angle of completed vanity area')"><img src="img/bathroom_06.webp" class="portfolio-img" alt="Double vanity side view" loading="lazy"><div class="portfolio-caption"><h4>Double Vanity – Wide View</h4><p>Full vanity installation with arched mirrors</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_07.webp','Sink & Faucet Detail','Undermount sink with quartz & brushed gold faucet')"><img src="img/bathroom_07.webp" class="portfolio-img" alt="Sink and faucet detail" loading="lazy"><div class="portfolio-caption"><h4>Sink & Faucet Detail</h4><p>Undermount sink with quartz & brushed gold</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bathroom_08.webp','Freestanding Tub – Close Up','Soaker tub with tile surround close-up')"><img src="img/bathroom_08.webp" class="portfolio-img" alt="Freestanding tub close up" loading="lazy"><div class="portfolio-caption"><h4>Freestanding Tub Close-Up</h4><p>Soaker tub with white tile surround</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/counter_detail.webp','Counter Detail – Gold Hardware','White quartz countertop with gold faucet & pulls')"><img src="img/counter_detail.webp" class="portfolio-img" alt="Counter detail gold hardware" loading="lazy"><div class="portfolio-caption"><h4>Counter – Gold Hardware Detail</h4><p>White quartz with brushed gold fixtures</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bath_vanity_detail.webp','Bathroom – Vanity & Tile Wall','Completed vanity area with tile accent')"><img src="img/bath_vanity_detail.webp" class="portfolio-img" alt="Bathroom vanity tile wall" loading="lazy"><div class="portfolio-caption"><h4>Vanity & Tile Wall Detail</h4><p>Finished vanity with accent tile backsplash</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/shower_pebble.webp','Shower – Black Pebble Accent','Glass door shower with black pebble mosaic band')"><img src="img/shower_pebble.webp" class="portfolio-img" alt="Shower pebble mosaic tile" loading="lazy"><div class="portfolio-caption"><h4>Shower – Pebble Mosaic Accent</h4><p>Rain head, glass door & black pebble band</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bath_luxury_vanity.webp','Luxury Bath – Double Vanity','Dark wood cabinetry with sconce lighting')"><img src="img/bath_luxury_vanity.webp" class="portfolio-img" alt="Luxury bath double vanity" loading="lazy"><div class="portfolio-caption"><h4>Luxury Bath – Double Vanity</h4><p>Dark wood cabinetry with sconces & white quartz</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/bath_luxury_tub.webp','Luxury Bath – Marble Tub Surround','Marble tile surround with steel-frame windows')"><img src="img/bath_luxury_tub.webp" class="portfolio-img" alt="Marble tub surround luxury bath" loading="lazy"><div class="portfolio-caption"><h4>Luxury Bath – Marble Tub Surround</h4><p>Floor-to-ceiling marble tile & steel-frame windows</p></div></div>
+    </div>
+  </div>
+
+  <!-- EXTERIOR & SIDING -->
+  <div class="portfolio-group" id="group-exterior">
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openLightbox('img/exterior_door.webp','Front Door Restoration','Refinished deep red entry door with new surround')"><img src="img/exterior_door.webp" class="portfolio-img" alt="Restored red front door" loading="lazy"><div class="portfolio-caption"><h4>Front Door Restoration</h4><p>Refinished door, repaired surround & new hardware</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/exterior_house.webp','Exterior House Painting','Full exterior repainted with new color scheme')"><img src="img/exterior_house.webp" class="portfolio-img" alt="Exterior house painting" loading="lazy"><div class="portfolio-caption"><h4>Exterior House Painting</h4><p>Full repaint with accent shutters & trim</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/exterior_deck.webp','Deck at Night','Repaired & refinished deck, perfect for entertaining')"><img src="img/exterior_deck.webp" class="portfolio-img" alt="Deck at night" loading="lazy"><div class="portfolio-caption"><h4>Deck Repair & Refinish</h4><p>Repaired, stained deck ready for entertaining</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_before.webp','Victorian Home Restoration – Before','Peeling siding and rot on historic Victorian home')"><img src="img/siding_before.webp" class="portfolio-img" alt="Victorian home before restoration" loading="lazy"><div class="portfolio-caption"><h4>Victorian Home – Before</h4><p>Significant rot & peeling siding, ready for restoration</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_during_1.webp','Victorian Home – In Progress','New siding going up on Victorian restoration project')"><img src="img/siding_during_1.webp" class="portfolio-img" alt="Victorian home siding in progress" loading="lazy"><div class="portfolio-caption"><h4>Victorian Home – In Progress</h4><p>New siding installation underway</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_during_2.webp','Victorian Home – Continued Progress','Further along on the historic siding restoration')"><img src="img/siding_during_2.webp" class="portfolio-img" alt="Victorian home restoration continued" loading="lazy"><div class="portfolio-caption"><h4>Victorian Home – Continued Progress</h4><p>Siding & trim restoration moving along</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/siding_chimney.webp','Siding – Chimney Surround','Clean new siding installation around chimney')"><img src="img/siding_chimney.webp" class="portfolio-img" alt="Siding around chimney" loading="lazy"><div class="portfolio-caption"><h4>Siding – Chimney Surround</h4><p>Precision siding install around chimney</p></div></div>
+    </div>
+  </div>
+
+  <!-- INTERIOR & PAINT -->
+  <div class="portfolio-group" id="group-interior">
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openLightbox('img/ceiling_before.webp','Ceiling Repair – Before','Water-damaged ceiling with hole and staining')"><img src="img/ceiling_before.webp" class="portfolio-img" alt="Ceiling damage before repair" loading="lazy"><div class="portfolio-caption"><h4>Ceiling Repair – Before</h4><p>Water damage with hole and staining</p></div></div>
+      <div class="portfolio-card" onclick="openLightbox('img/ceiling_after.webp','Ceiling Repair – After','Perfectly patched and repainted ceiling')"><img src="img/ceiling_after.webp" class="portfolio-img" alt="Ceiling repair finished" loading="lazy"><div class="portfolio-caption"><h4>Ceiling Repair – After</h4><p>Seamlessly patched, textured & painted to match</p></div></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM WORK -->
+  <div class="portfolio-group" id="group-custom">
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openLightbox('img/custom_window_seat.webp','Custom Window Seat & Built-In Shelving','Full built-in with storage seat and floor-to-ceiling shelves')"><img src="img/custom_window_seat.webp" class="portfolio-img" alt="Custom window seat built-in shelving" loading="lazy"><div class="portfolio-caption"><h4>Custom Window Seat & Shelving</h4><p>Floor-to-ceiling shelves with storage window seat</p></div></div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 32px;">
+    <a href="#contact" class="btn-primary">📞 Start Your Project Today →</a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button onclick="closeLightbox()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:white;font-size:2rem;cursor:pointer;z-index:501;">✕</button>
+  <img id="lightbox-img" src="" style="max-width:90vw;max-height:80vh;border-radius:8px;object-fit:contain;box-shadow:0 12px 48px rgba(0,0,0,0.5);" onclick="event.stopPropagation()">
+  <div style="margin-top:16px;text-align:center;">
+    <div id="lightbox-title" style="color:white;font-weight:700;font-size:1rem;"></div>
+    <div id="lightbox-desc" style="color:#aab8d4;font-size:0.85rem;margin-top:4px;"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">JEM <span>Renovations</span></span>
+      <p>Expert remodeling and renovation services in Fishers, Indiana. We listen to your vision, deliver exceptional craftsmanship, and leave every home better than we found it.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Bathroom Remodels</a></li>
+        <li><a href="#services">Kitchen Renovations</a></li>
+        <li><a href="#services">Interior & Exterior Painting</a></li>
+        <li><a href="#services">Siding & Exterior Repair</a></li>
+        <li><a href="#services">Custom Built-ins</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#reviews">Customer Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="tel:+13174300149">📞 Call Now</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 JEM Renovations LLC · Fishers, Indiana</span>
+    <span>Remodeling Fishers IN · Bathroom Remodel Fishers Indiana · Home Renovation Fishers IN</span>
+    <a href="tel:+13174300149">(317) 430-0149</a>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <a href="tel:+13174300149">📞 Call Now for a Free Estimate</a>
+</div>
+
+<script>
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  function filterPortfolio(group, btn) {
+    document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.portfolio-group').forEach(g => g.classList.remove('active'));
+    document.getElementById('group-' + group).classList.add('active');
+  }
+
+  function openLightbox(src, title, desc) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-title').textContent = title;
+    document.getElementById('lightbox-desc').textContent = desc;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
