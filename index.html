@@ -230,6 +230,17 @@
     display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
   }
+  .review-card.hidden { display: none; }
+  .reviews-more-wrap { text-align: center; margin-top: 32px; }
+  .btn-more-reviews {
+    background: transparent; color: var(--white);
+    border: 2px solid rgba(255,255,255,0.35);
+    padding: 12px 28px; border-radius: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem; font-weight: 600;
+    cursor: pointer; transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-more-reviews:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.07); }
   .review-card {
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.10);
@@ -679,138 +690,141 @@
       <div class="reviewer">John Doe</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie Miles and JEM Renovations created for me the 'shower of my dreams!' It is absolutely stunning and I could not be happier with the results! Jamie is such a hard worker and has great integrity in his business dealings. He does exactly what he says he will do and does it in a timely manner. We also love his assistant, Katie — she is a joy to work with and helps keep all of his projects on track!"</p>
       <div class="reviewer">Deborah Howard</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie did an amazing job painting my house. He made sure rotted wood was replaced or repaired, power washed & scraped all the trim & siding, and fixed a previously-undiscovered leak that had been causing damage for 14 yrs. Jamie's attention to detail & dedication to making sure the job was done right gives me confidence in recommending him for any interior or exterior needs you might have."</p>
       <div class="reviewer">Katie Alford</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"The whole team at JEM was fantastic to work with. We worked together to diagnose and repair the trim around my chimney. Even though it felt like a 'small project,' it's really nice to work with people who treat it with the same respect as their biggest projects. Communication was always prompt, and they kept to the exact schedule that we'd agreed upon."</p>
       <div class="reviewer">RJ Wachs</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"It took weeks for me to find a company/contractor this summer who was responsive & reliable. We wound up using Jamie at JEM renovations. He helped us complete two drywall projects around the house, repaired outdoor water damage and siding issues. All in a day & half. He was fair priced & professional. Would recommend him and his team."</p>
       <div class="reviewer">Amanda Rodenbeck</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"I hired JEM for my deck repair and they did a fantastic job. The craftsmanship is excellent. Jamie and Katie communicated throughout the project and the team cleaned up after themselves. I couldn't be more pleased with the service. I will definitely refer and hire them again."</p>
       <div class="reviewer">Kira Newkirk</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Reliable and moderately priced bathroom remodel. The workers are highly skilled and the experience was entirely positive. I will use them again."</p>
       <div class="reviewer">Joe Dietz</div>
       <div class="review-date">5 months ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"JEM Renovations has provided excellent workmanship in the Kitchen and Bathroom projects in our home. Jamie has always been very pleasant and thoughtful in dealing with us. He is dependable, thorough, detailed and at the end of a project, everything is left very tidy and clean. We highly recommend him to anyone who needs household projects, both big and small."</p>
       <div class="reviewer">Don & Martha Stutzman</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie and crew remodeled our dated bath and bedroom. Wonderful job and attention to detail. They were able to make any requested additions or changes asked. Work they did was absolutely great. Shout out to Katie, Samuel and Marvin also! Will be using them again for our house and a rental we have."</p>
       <div class="reviewer">Mark & Leslie Lecklider</div>
       <div class="review-date">8 months ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Excellent attention to details! Jamie and his team did a great job painting our vintage cabinets to make them fresh and modern. They showed up when they said they would, and worked until the job was completed. He came to inspect the work when finished to ensure we were satisfied. He also took the time to provide us itemized quotes for other renovation projects. Definitely would recommend JEM Renovations!"</p>
       <div class="reviewer">Barbara Zech</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie's management skills were put to the test on the several projects JEM helped out with at our home. Projects included drywall repair, rotted wood trim replacement, and installing a deck door kickplate. Everything was completed on-time and without a hitch."</p>
       <div class="reviewer">Bob Ripperger</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"I told my neighbor I needed a handyman to do misc projects. He referred me to JEM Renovations. Their crew quickly completed all of my projects to perfection demonstrating their skills. I was very pleased with their work, will use them again & will gladly refer them to others."</p>
       <div class="reviewer">Jane Knecht</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"JEM contractors installed windows to our screened in porch. The process was easy and the installation was done quickly. They made sure to provide a meeting with the window representative so we knew exactly what we were getting. They never left a mess and were not at all intrusive. We liked them enough to have them renovate our master bathroom."</p>
       <div class="reviewer">Nancy Bates</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"This company has trustworthy, friendly, and meticulous staff. I had new tile floor put into 4 rooms, tile in bathroom, a new toilet put in, and painting inside and outside the house. Highly recommend!!"</p>
       <div class="reviewer">Elyce Elder</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie built this wonderful sitting area for me. Loved his work and how beautiful it turned out."</p>
       <div class="reviewer">Samruddhi Dawande</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie does great work and is a perfectionist. If he sees something that doesn't meet his standards he comes back to fix it. He is very personable and easy to work with."</p>
       <div class="reviewer">Sally Might</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"They did an amazing job, high quality work. My husband and I are so happy with our kitchen!"</p>
       <div class="reviewer">Addy Riley</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"They did an amazing job on my home! Would definitely recommend!"</p>
       <div class="reviewer">Rick Niemritz</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Fantastic work on staining my garage doors. Great communication, fair price and professional."</p>
       <div class="reviewer">Jerry Faletic</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie does excellent work at a great price! It's hard to find this kind of expertise these days."</p>
       <div class="reviewer">Keith Trump</div>
       <div class="review-date">2 years ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"Jamie and his crew are very hard workers, and he is always responsive and wants to make sure everything is done right."</p>
       <div class="reviewer">Henry Karlson</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"The only company I'll go with for paint, renovations, remodels. Super easy to work with."</p>
       <div class="reviewer">Dane Schilling</div>
       <div class="review-date">1 year ago · Google Review</div>
     </div>
-    <div class="review-card">
+    <div class="review-card hidden">
       <div class="review-stars">★★★★★</div>
       <p class="review-text">"I used JEM Renovations for a Primary Bath remodel. I am so pleased with the final result. There was an unexpected hiccup along the way (no fault of JEM) and Jamie and Katie had thorough communication and solutions. The staff was professional and courteous. I would definitely use JEM again."</p>
       <div class="reviewer">Roederer5</div>
       <div class="review-date">1 week ago · Google Review</div>
     </div>
+  </div>
+  <div class="reviews-more-wrap">
+    <button class="btn-more-reviews" onclick="toggleReviews(this)">See All 25 Reviews ↓</button>
   </div>
 </section>
 
@@ -1164,6 +1178,20 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  function toggleReviews(btn) {
+    const hidden = document.querySelectorAll('.review-card.hidden');
+    const expanded = hidden.length === 0;
+    if (expanded) {
+      document.querySelectorAll('.review-card').forEach((c, i) => {
+        if (i >= 3) c.classList.add('hidden');
+      });
+      btn.textContent = 'See All 25 Reviews ↓';
+    } else {
+      hidden.forEach(c => c.classList.remove('hidden'));
+      btn.textContent = 'Show Less ↑';
+    }
+  }
 </script>
 </body>
 </html>
