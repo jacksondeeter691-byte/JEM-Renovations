@@ -1040,6 +1040,7 @@
         <input type="hidden" name="_subject" value="New Estimate Request – JEM Renovations">
         <input type="hidden" name="_next" value="https://jacksondeeter691-byte.github.io/JEM-Renovations/thanks.html">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="submitted_at" id="submitted_at">
         <div class="form-row">
           <div class="form-group">
             <label>First Name *</label>
@@ -1228,6 +1229,14 @@
 </div>
 
 <script>
+  document.querySelector('form').addEventListener('submit', function() {
+    const now = new Date();
+    document.getElementById('submitted_at').value = now.toLocaleString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', hour12: true, timeZoneName: 'short'
+    });
+  });
+
   function toggleFaq(el) {
     const item = el.closest('.faq-item');
     item.classList.toggle('open');
