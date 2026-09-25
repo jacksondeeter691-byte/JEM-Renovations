@@ -91,7 +91,11 @@
     position: absolute; inset: 0;
     background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
-  .hero-inner { max-width: 680px; position: relative; z-index: 1; }
+  .hero-inner { max-width: 1100px; width: 100%; position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+  .hero-text { max-width: 600px; }
+  .hero-logo-wrap { flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .hero-logo-wrap img { width: 220px; height: auto; border-radius: 20px; opacity: 0.95; }
+  @media (max-width: 900px) { .hero-logo-wrap { display: none; } .hero-text { max-width: 100%; } }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px;
     background: rgba(201,147,58,0.18);
@@ -521,11 +525,12 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  .hero-inner > * { animation: fadeUp 0.6s ease both; }
-  .hero-inner .hero-badge { animation-delay: 0.05s; }
-  .hero-inner h1 { animation-delay: 0.15s; }
-  .hero-inner p { animation-delay: 0.25s; }
-  .hero-inner .hero-btns { animation-delay: 0.35s; }
+  .hero-text > * { animation: fadeUp 0.6s ease both; }
+  .hero-text .hero-badge { animation-delay: 0.05s; }
+  .hero-text h1 { animation-delay: 0.15s; }
+  .hero-text p { animation-delay: 0.25s; }
+  .hero-text .hero-btns { animation-delay: 0.35s; }
+  .hero-logo-wrap { animation: fadeUp 0.6s ease 0.2s both; }
 </style>
 </head>
 <body>
@@ -538,7 +543,10 @@
 
 <!-- NAVBAR -->
 <nav>
-  <div class="logo">JEM <span>Renovations</span></div>
+  <div class="logo" style="display:flex;align-items:center;gap:10px;">
+    <img src="img/logo.png" alt="JEM Renovations Logo" style="height:42px;width:auto;border-radius:8px;">
+    JEM <span>Renovations</span>
+  </div>
   <ul>
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
@@ -555,12 +563,17 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">⭐ 5.0 Rating &nbsp;·&nbsp; 26 Reviews &nbsp;·&nbsp; Fishers, IN</div>
-    <h1>Expert Renovations &<br><em>Remodeling Services</em><br>in Fishers, IN</h1>
-    <p>We listen to your vision, bring it to life with exceptional craftsmanship, and leave your home better than we found it — every single time.</p>
-    <div class="hero-btns">
-      <a href="tel:+13174300149" class="btn-primary">📞 Call Now</a>
-      <a href="#contact" class="btn-secondary">Get a Free Estimate →</a>
+    <div class="hero-text">
+      <div class="hero-badge">⭐ 5.0 Rating &nbsp;·&nbsp; 26 Reviews &nbsp;·&nbsp; Fishers, IN</div>
+      <h1>Expert Renovations &<br><em>Remodeling Services</em><br>in Fishers, IN</h1>
+      <p>We listen to your vision, bring it to life with exceptional craftsmanship, and leave your home better than we found it — every single time.</p>
+      <div class="hero-btns">
+        <a href="tel:+13174300149" class="btn-primary">📞 Call Now</a>
+        <a href="#contact" class="btn-secondary">Get a Free Estimate →</a>
+      </div>
+    </div>
+    <div class="hero-logo-wrap">
+      <img src="img/logo.png" alt="JEM Renovations LLC Logo">
     </div>
   </div>
 </section>
