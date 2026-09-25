@@ -975,46 +975,51 @@
     </div>
     <div class="contact-form-wrap">
       <h3>Tell Us About Your Project</h3>
-      <div class="form-row">
-        <div class="form-group">
-          <label>First Name *</label>
-          <input type="text" placeholder="John">
+      <form action="https://formsubmit.co/jacksondeeter691@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Estimate Request – JEM Renovations">
+        <input type="hidden" name="_next" value="https://jacksondeeter691-byte.github.io/JEM-Renovations/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" name="first_name" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" name="last_name" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="(317) 555-0100" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="john@email.com">
+          </div>
         </div>
         <div class="form-group">
-          <label>Last Name *</label>
-          <input type="text" placeholder="Smith">
+          <label>Service Needed</label>
+          <select name="service">
+            <option value="">Select a service...</option>
+            <option>Bathroom Remodel</option>
+            <option>Kitchen Renovation</option>
+            <option>Interior Painting</option>
+            <option>Exterior Painting</option>
+            <option>Siding & Exterior Repair</option>
+            <option>Drywall & Ceiling Repair</option>
+            <option>Custom Built-ins & Millwork</option>
+            <option>Other / Not Sure</option>
+          </select>
         </div>
-      </div>
-      <div class="form-row">
         <div class="form-group">
-          <label>Phone Number *</label>
-          <input type="tel" placeholder="(317) 555-0100">
+          <label>Project Description</label>
+          <textarea name="message" placeholder="Tell us a bit about what you need done and your location in Fishers or surrounding areas..."></textarea>
         </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="john@email.com">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Service Needed</label>
-        <select>
-          <option value="">Select a service...</option>
-          <option>Bathroom Remodel</option>
-          <option>Kitchen Renovation</option>
-          <option>Interior Painting</option>
-          <option>Exterior Painting</option>
-          <option>Siding & Exterior Repair</option>
-          <option>Drywall & Ceiling Repair</option>
-          <option>Custom Built-ins & Millwork</option>
-          <option>Other / Not Sure</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Project Description</label>
-        <textarea placeholder="Tell us a bit about what you need done and your location in Fishers or surrounding areas..."></textarea>
-      </div>
-      <button class="btn-form">📩 Send My Free Estimate Request</button>
-      <p style="font-size:0.78rem;color:var(--slate);text-align:center;margin-top:12px;">We typically respond within a few hours. No obligation, no spam.</p>
+        <button type="submit" class="btn-form">📩 Send My Free Estimate Request</button>
+        <p style="font-size:0.78rem;color:var(--slate);text-align:center;margin-top:12px;">We typically respond within a few hours. No obligation, no spam.</p>
+      </form>
     </div>
   </div>
 </section>
