@@ -462,11 +462,49 @@
   /* ── LIGHTBOX ── */
   #lightbox {
     display: none; position: fixed; inset: 0; z-index: 500;
-    background: rgba(0,0,0,0.88);
-    align-items: center; justify-content: center; flex-direction: column;
+    background: rgba(0,0,0,0.72);
+    align-items: center; justify-content: center;
     padding: 20px;
   }
   #lightbox.open { display: flex; }
+  .lightbox-card {
+    background: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    max-width: 820px;
+    width: 100%;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+    animation: lbPop 0.22s ease;
+    position: relative;
+  }
+  @keyframes lbPop {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  .lightbox-card img {
+    width: 100%; max-height: 70vh;
+    object-fit: contain; display: block;
+    background: var(--light);
+  }
+  .lightbox-info {
+    padding: 18px 22px 20px;
+    border-top: 1px solid var(--border);
+  }
+  .lightbox-info h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--navy); margin-bottom: 4px;
+  }
+  .lightbox-info p { font-size: 0.88rem; color: var(--slate); margin: 0; }
+  .lightbox-close {
+    position: absolute; top: 12px; right: 14px;
+    background: rgba(0,0,0,0.45); border: none;
+    color: white; font-size: 1.2rem; line-height: 1;
+    width: 32px; height: 32px; border-radius: 50%;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .lightbox-close:hover { background: rgba(0,0,0,0.7); }
 
   /* ── ANIM ── */
   @keyframes fadeUp {
@@ -1110,11 +1148,13 @@
 
 <!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
-  <button onclick="closeLightbox()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:white;font-size:2rem;cursor:pointer;z-index:501;">✕</button>
-  <img id="lightbox-img" src="" style="max-width:90vw;max-height:80vh;border-radius:8px;object-fit:contain;box-shadow:0 12px 48px rgba(0,0,0,0.5);" onclick="event.stopPropagation()">
-  <div style="margin-top:16px;text-align:center;">
-    <div id="lightbox-title" style="color:white;font-weight:700;font-size:1rem;"></div>
-    <div id="lightbox-desc" style="color:#aab8d4;font-size:0.85rem;margin-top:4px;"></div>
+  <div class="lightbox-card" onclick="event.stopPropagation()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-info">
+      <h4 id="lightbox-title"></h4>
+      <p id="lightbox-desc"></p>
+    </div>
   </div>
 </div>
 
